@@ -25,10 +25,11 @@
 <body>
 
   <header>
+
     <img src="img/logo.svg" alt="Логотип" height="66">
-  
-    <p><strong>Меню</strong></p>
-  
+
+    <p>Меню</p>
+
     <nav>
       <ul>
         <li>
@@ -48,12 +49,15 @@
         </li>
       </ul>
     </nav>
+
   </header>
 
   <main>
+
     <section>
+
       <h1>У нас есть всё для классного отдыха с друзьями!</h1>
-  
+
       <ul>
         <li>
           <figure>
@@ -77,26 +81,28 @@
           <figure>
             <img src="img/game.jpg" alt="Человек играет в настольную игру" height="228">
             <figcaption>Настольные игры</figcaption>
-            </figure>
+          </figure>
         </li>
         <li>
           <figure>
             <img src="img/netflix.jpg" alt="Телевизор с изображением логотипа Нетфликс" height="228">
             <figcaption>Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
-            </figure>
+          </figure>
         </li>
         <li>
           <figure>
             <img src="img/sony.jpg" alt="Игровая приставка с включенной игрой" height="228">
             <figcaption>PlayStation 5</figcaption>
-            </figure>
+          </figure>
         </li>
       </ul>
+
     </section>
 
     <section>
+
       <h2 id="halls">Наши залы</h2>
-  
+
       <ol>
         <li>
           <a href="vibes.html">80's vibes</a>
@@ -111,195 +117,189 @@
           <a href="neon.html">Neon style</a>
         </li>
       </ol>
+
     </section>
 
     <section>
-      <h2 id="booking">Забронировать</h2>
-  
-      <p>Забронировать зал просто</p>
-  
+
+      <h2 id="booking">Забронировать зал просто</h2>
+
       <form name="form_booking" action="https://jsonplaceholder.typicode.com/posts" method="POST">
         <fieldset>
           <legend>Выбери зал</legend>
-          <label>
-            <input type="radio" name="halls" value="80s">
-            80's vibes
-          </label>
-  
-          <label>
-            <input type="radio" name="halls" value="star_wars">
-            star wars
-          </label>
-  
-          <label>
-            <input type="radio" name="halls" value="wild_west">
-            wild west
-          </label>
-  
-          <label>
-            <input type="radio" name="halls" value="neon_style">
-            neon style
-          </label>
+
+          <input type="radio" name="halls" value="80s-vibes" id="80s-vibes">
+          <label for="80s-vibes">80's vibes</label>
+
+          <input type="radio" name="halls" value="star-wars" id="star-wars">
+          <label for="star-wars">star wars</label>
+
+          <input type="radio" name="halls" value="wild-west" id="wild-west">
+          <label for="wild-west">wild west</label>
+
+          <input type="radio" name="halls" value="neon-style" id="neon-style">
+          <label for="neon-style">neon style</label>
         </fieldset>
-  
+
         <fieldset>
           <legend>Собери набор развлечений</legend>
+
           <fieldset>
             <legend>Приставка:</legend>
-  
+
             <label>
               <input type="radio" name="console" value="playstation">
               PlayStation
             </label>
-  
+
             <label>
               <input type="radio" name="console" value="sega">
               Sega Mega Drive
             </label>
-  
+
             <label>
               <input type="radio" name="console" value="xbox">
               X-box One S
             </label>
-  
+
             <label>
               <input type="radio" name="console" value="dendy">
               Dendy
             </label>
           </fieldset>
-  
+
           <fieldset>
             <legend>Настольные игры:</legend>
-  
+
             <label>
-              <input type="checkbox" name="board_game" value="jenga">
+              <input type="checkbox" name="boardGame" value="jenga">
               Jenga
             </label>
-  
+
             <label>
-              <input type="checkbox" name="board_game" value="monopoly">
+              <input type="checkbox" name="boardGame" value="monopoly">
               Monopoly
             </label>
-  
+
             <label>
-              <input type="checkbox" name="board_game" value="munchkin">
+              <input type="checkbox" name="boardGame" value="munchkin">
               Манчкин
             </label>
-  
+
             <label>
-              <input type="checkbox" name="board_game" value="alias">
+              <input type="checkbox" name="boardGame" value="alias">
               Alias
             </label>
           </fieldset>
-  
+
           <fieldset>
             <legend>Дополнительно:</legend>
-  
+
             <label>
               <input type="checkbox" name="additionally" value="karaoke">
               Караоке
             </label>
-  
+
             <label>
               <input type="checkbox" name="additionally" value="vr">
               VR
             </label>
           </fieldset>
         </fieldset>
-  
+
         <fieldset>
           <legend>Выбери дату и время</legend>
-  
-          <label for="date">Дата</label>
-          <input type="date" name="date" id="date" required>
-  
-          <label for="time">Время</label>
-          <input type="time" name="time" id="time" required>
-  
-          <label for="persons">Сколько человек</label>
-          <input type="number" name="persons" id="persons" min="1" required>
-  
-          <label for="fname">Имя</label>
-          <input type="text" name="fname" id="fname" required>
-  
-          <label for="lname">Фамилия</label>
-          <input type="text" name="lname" id="lname" required>
-  
-          <label for="phone">Телефон</label>
-          <input type="tel" name="phone" id="phone" required>
 
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" required>
-  
-          <label>
-            <input type="checkbox" name="age" value="confirm" required>
-            Я старше 18 лет
-          </label>
+          <div>
+            <input type="date" name="date" required>
+
+            <input type="time" name="time" required>
+            <div>
+              <input type="number" name="persons" required min="1">
+            </div>
+          </div>
+
+          <div>
+            <label for="fname">Имя</label>
+            <input type="text" name="fname" id="fname" required>
+
+            <label for="lname">Фамилия</label>
+            <input type="text" name="lname" id="lname" required>
+          </div>
+
+          <div>
+            <label for="phone">Телефон</label>
+            <input type="tel" name="phone" id="phone" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+          </div>
         </fieldset>
-  
+
         <button type="submit">Забронировать</button>
-  
-        <label>
-          <input type="checkbox" name="politics" value="confirm" required>
-          Согласен на обработку данных
-        </label>
-      </form>  
+      </form>
+
     </section>
 
     <section>
+
       <h2 id="about">О нас</h2>
-  
+
       <p>Для наших гостей мы создали <em>концептуально новое игровое пространство виртуальной реальности</em> в центральной части города.</p>
-  
+
       <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
-  
+
       <blockquote>
-        <p>
-          <q><strong>GAME OVER</strong> - это место незабываемых впечатлений</q>
-        </p>
-        
-        <p>
-          <cite>Аркадий Абашкин, создатель игровой территории GAME OVER</cite>
-        </p>
+        <p><q><strong>GAME OVER</strong> - это место незабываемых впечатлений</q></p>
+        <p><cite>Аркадий Абашкин, создатель игровой территории GAME OVER</cite></p>
       </blockquote>
+
     </section>
 
     <section>
+
       <h2 id="reviews">Отзывы посетителей</h2>
 
-      <div>
-        <p>Макс Самойлов</p>
-        <p>Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
-      </div>
+      <ul>
+        <li>
+          <figure>
+            <img src="img/cat-one.jpg" alt="Кот показывает язык" height="150">
+            <figcaption>Макс Самойлов</figcaption>
+          </figure>
+          <p>Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
+        </li>
+        <li>
+          <figure>
+            <img src="img/cat-two.jpg" alt="Кот с задумчивым взглядом" height="150">
+            <figcaption>Оксана Григорьева</figcaption>
+          </figure>
+          <p>Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
+        </li>
+        <li>
+          <figure>
+            <img src="img/cat-three.jpg" alt="Грустный кот смотрит на торт с зажжёнными свечами" height="150">
+            <figcaption>Никита Ященко</figcaption>
+          </figure>
+          <p>Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
+        </li>
+      </ul>
 
-      <div>
-        <p>Оксана Григорьевна</p>
-        <p>Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
-      </div>
-
-      <div>
-        <p>Никита Ященко</p>
-        <p>Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
-      </div>
     </section>
 
   </main>
 
   <footer>
-    <h3 id="contacts"><b>Контакты</b></h3>
-  
+
+    <h3 id="contacts">Контакты</h3>
+
     <address>
       <p>г. Москва ул. Аквамарина, 16</p>
-  
-      <p>
-        <a href="tel:89509302893">8(950)930-28-93</a>
-      </p>
-  
-      <p>
-        <a href="mailto:gameover@gmail.com">GameOver@gmail.com</a>
-      </p>
+
+      <p><a href="tel:89509302893">8(950)930-28-93</a></p>
+
+      <p><a href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
     </address>
-  
+
     <nav>
       <ul>
         <li>
@@ -310,6 +310,7 @@
         </li>
       </ul>
     </nav>
+
   </footer>
 
 </body>
