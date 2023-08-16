@@ -1,18 +1,19 @@
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #1B1A1B; 
-  color: #FFFFFF; 
+  background-color: #1b1a1b;
+  color: #ffffff;
+  margin: 0;
 }
 
 .wrapper {
-  width: 1200px; 
-  padding: 30px; 
-  margin: 0 auto; 
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
 }
 
-.quote {
-  text-transform: uppercase; 
+.about-quote {
+  text-transform: uppercase;
 }
