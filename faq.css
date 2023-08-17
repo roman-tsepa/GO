@@ -1,45 +1,52 @@
-.questions-list {
-  list-style-type: none;
-  padding-left: 0;
+.title-questions {
+  margin-top: 0;
 }
 
-.questions-item {
-  background-color: #ffffff;
-  color: #1c1a1a;
+.list-questions {
+  padding-left: 0;
+  margin: 0;
+}
+
+.item-questions {
   font-weight: 700;
   font-size: 24px;
   padding: 30px 70px;
   margin-bottom: 20px;
-  position: relative;
+  list-style-type: none;
+  line-height: 192%;
 }
 
-.questions-item:nth-child(2n) {
+/* --- Псевдокласс у item */
+.item-questions:last-child {
+  margin-bottom: 0;
+}
+
+.item-questions:nth-child(odd) {
+  background-color: #ffffff;
+  color: #1c1a1a;
+}
+
+.item-questions:nth-child(even) {
   background-color: #440f51;
   color: #ffffff;
 }
+/* Псевдокласс у item --- */
 
-.questions-white::after {
+/* --- Псевдоэлемент у item */
+.item-questions:nth-child(n)::after {
   content: "";
-  display: inline-block;
-  position: absolute;
-  right: 80px;
-  bottom: 20px;
+  display: block;
   width: 46px;
   height: 46px;
+  float: right;
+  background-repeat: no-repeat;
+}
+
+.item-questions:nth-child(odd)::after {
   background-image: url(img/open-purple.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
-.questions-purple::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  right: 80px;
-  bottom: 20px;
-  width: 46px;
-  height: 46px;
+.item-questions:nth-child(even)::after {
   background-image: url(img/open.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
+/* Псевдоэлемент у item --- */
