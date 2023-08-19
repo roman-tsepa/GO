@@ -5,35 +5,32 @@
 .list-questions {
   padding-left: 0;
   margin: 0;
+  list-style: none;
 }
 
 .item-questions {
   font-weight: 700;
   font-size: 24px;
-  padding: 30px 70px;
+  padding: 20px 70px;
   margin-bottom: 20px;
-  list-style-type: none;
   line-height: 1.9;
 }
 
-/* --- Псевдокласс у item */
-.item-questions:last-child {
+.item-questions:last-child { /* Псевдокласс у item */
   margin-bottom: 0;
 }
 
 .item-questions:nth-child(odd) {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #1c1a1a;
 }
 
 .item-questions:nth-child(even) {
   background-color: #440f51;
-  color: #ffffff;
+  color: #fff;
 }
-/* Псевдокласс у item --- */
 
-/* --- Псевдоэлемент у item */
-.item-questions:nth-child(n)::after {
+.item-questions::after { /* Псевдоэлемент у item */
   content: "";
   display: block;
   width: 46px;
@@ -49,4 +46,3 @@
 .item-questions:nth-child(even)::after {
   background-image: url(img/open.svg);
 }
-/* Псевдоэлемент у item --- */
