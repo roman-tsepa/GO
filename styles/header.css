@@ -1,0 +1,42 @@
+.present {
+  position: relative;
+  min-height: 1019px;
+  padding: 146px 0 50px;
+  z-index: 0;
+}
+
+.present::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  z-index: 1;
+  width: 675px;
+  height: 762px;
+  background-image: url(../images/header/man-vr.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.present--title {
+  max-width: 883px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 150px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.1em;
+}
+
+.present--inner-subtitle {
+  max-width: 469px;
+  padding-left: 100px;
+}
+
+.present--subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: 400;
+}
