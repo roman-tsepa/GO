@@ -2,9 +2,8 @@
   padding: 50px 0;
 }
 
-.halls--title {
-  margin: 0 0 60px;
-  padding: 0 100px;
+.halls__title {
+  margin-bottom: 60px;
   font-size: 40px;
   line-height: 1.25;
   font-weight: 700;
@@ -12,72 +11,41 @@
   text-transform: uppercase;
 }
 
-.halls--list {
-  padding-left: 0;
-  margin: 0;
+.halls__item {
+  min-height: 710px;
+  padding: 275px 0;
   text-align: center;
   text-transform: uppercase;
-  list-style: none;
-}
-
-.halls--item-80,
-.halls--item-ss,
-.halls--item-ww,
-.halls--item-ns {
-  min-height: 710px;
-  margin-bottom: 60px;
-  padding: 275px 0;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
-.halls--item-80 {
+.halls__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.halls__item-80s {
   background-image: url(../images/halls/80s-vibes.jpg);
-  background-size: 1251px;
   background-position: 40% 81%;
 }
 
-.halls--item-ss {
+.halls__item-ss {
   background-image: url(../images/halls/star-wars.jpg);
-  background-size: 1180px;
-  background-position: 50% 50%;
 }
 
-.halls--item-ww {
+.halls__item-ww {
   background-image: url(../images/halls/wild-west.jpg);
-  background-size: 1180px;
-  background-position: 50% 50%;
 }
 
-.halls--item-ns {
-  margin-bottom: 0;
+.halls__item-ns {
   background-image: url(../images/halls/neon-style.jpg);
-  background-size: 1180px;
-  background-position: 50% 50%;
 }
 
-.halls--item-80-title,
-.halls--item-ss-title,
-.halls--item-ww-title,
-.halls--item-ns-title {
+.halls__subtitle {
   display: inline-block;
-  margin: 0;
+  max-width: 226px;
   font-size: 70px;
   line-height: 80px;
   font-weight: 700;
-}
-
-.halls--item-80-title {
-  max-width: 211px;
-}
-
-.halls--item-ss-title {
-  max-width: 252px;
-}
-
-.halls--item-ww-title {
-  max-width: 203px;
-}
-
-.halls--item-ns-title {
-  max-width: 226px;
 }

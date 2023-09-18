@@ -2,9 +2,8 @@
   padding: 50px 0;
 }
 
-.booking--title {
+.booking__title {
   margin: 0 0 50px;
-  padding: 0 100px;
   font-size: 40px;
   line-height: 1.25;
   font-weight: 700;

@@ -2,9 +2,8 @@
   padding: 50px 0;
 }
 
-.contacts--title {
-  margin: 0 0 54px;
-  padding: 0 100px;
+.contacts__title {
+  margin-bottom: 54px;
   font-size: 40px;
   line-height: 1.25;
   font-weight: 700;
@@ -12,88 +11,54 @@
   text-transform: uppercase;
 }
 
-.contacts--address {
-  padding: 0 0 39px 66px;
+.contacts__address {
+  margin-bottom: 40px;
   font-style: normal;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
 }
 
-.contacts--location,
-.contacts--phone,
-.contacts--email {
-  position: relative;
+.contacts__contact-details {
   max-width: 415px;
-}
-
-.contacts--location {
-  margin: 0 0 43px;
-  white-space: pre-line;
-}
-
-.contacts--phone {
-  margin: 0 0 11px;
-}
-
-.contacts--email {
-  margin: 0;
-}
-
-.contacts--phone-link,
-.contacts--email-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.contacts--location::before,
-.contacts--phone::before,
-.contacts--email::before {
-  content: "";
-  position: absolute;
-  left: -66px;
-  width: 35px;
-  height: 32px;
+  padding-left: 70px;
   background-repeat: no-repeat;
+  background-size: 35px 32px;
+  background-position: left center;
 }
 
-.contacts--location::before {
-  top: 12px;
+.contacts__location {
+  margin-bottom: 38px;
+  white-space: pre-line;
   background-image: url(../icons/contacts/location.svg);
 }
 
-.contacts--phone::before {
-  top: -2px;
+.contacts__phone {
+  margin-bottom: 11px;
   background-image: url(../icons/contacts/phone-call.svg);
 }
 
-.contacts--email::before {
-  top: -2px;
-  left: -64px;
+.contacts__email {
   background-image: url(../icons/contacts/envelope.svg);
 }
 
-.contacts--list-social {
-  margin: 0;
-  padding-left: 0;
+.contacts__list-social {
   font-size: 0;
-  list-style: none;
 }
 
-.contacts--item-social {
+.contacts__item-social {
   display: inline-block;
   vertical-align: middle;
 }
 
-.contacts--item-social:not(:last-child) {
+.contacts__item-social:not(:last-child) {
   margin-right: 26px;
 }
 
-.contacts--link-social {
+.contacts__link-social {
   display: block;
   width: 50px;
   height: 50px;
-  color: #ffffff;
   outline: 1px solid transparent;
   outline-offset: 3px;
   border-radius: 50%;
@@ -102,14 +67,14 @@
   transition-timing-function: ease-in-out;
 }
 
-.contacts--link-social:hover {
+.contacts__link-social:hover {
   color: #cd06ff;
 }
 
-.contacts--link-social:focus {
+.contacts__link-social:focus {
   outline-color: #cd06ff;
 }
 
-.contacts--link-social:active {
+.contacts__link-social:active {
   color: #840aa3;
 }
