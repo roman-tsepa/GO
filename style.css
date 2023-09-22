@@ -1,0 +1,10 @@
+@import "styles/normalize.css";
+@import "styles/global.css";
+@import "blocks/present/present.css";
+@import "blocks/headline/headline.css";
+@import "blocks/halls/halls.css";
+@import "blocks/booking/booking.css";
+@import "blocks/about/about.css";
+@import "blocks/faq/faq.css";
+@import "blocks/contacts/contacts.css";
+@import "blocks/socials/socials.css";

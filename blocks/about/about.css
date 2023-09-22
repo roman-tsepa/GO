@@ -4,24 +4,18 @@
 
 .about__title {
   margin: 0 0 50px;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1.25;
-  text-align: center;
-  text-transform: uppercase;
 }
 
-.about__inner {
+.about__box-desc {
   margin-bottom: 78px;
 }
 
-.about__text {
+.about__desc {
   font-size: 20px;
   line-height: 1.4;
-  font-weight: 400;
 }
 
-.about__text:not(:last-child) {
+.about__desc:not(:last-child) {
   margin-bottom: 28px;
 }
 
@@ -35,7 +29,6 @@
   margin-bottom: 40px;
   font-size: 44px;
   line-height: 50px;
-  font-weight: 400;
   text-transform: uppercase;
   white-space: pre-line;
 }
@@ -56,7 +49,7 @@
   color: #6c0287;
 }
 
-.about__figure {
+.about__source {
   font-size: 0;
   text-align: right;
 }
@@ -69,7 +62,7 @@
   object-position: 50% 30%;
 }
 
-.about__figcaption {
+.about__caption {
   display: inline-block;
   max-width: 280px;
   padding-right: 46px;
