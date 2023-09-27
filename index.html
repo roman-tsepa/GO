@@ -4,6 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
+
   <title>GO</title>
 
   <link rel="stylesheet" href="style.css">
@@ -40,28 +41,28 @@
       </div>
     </section>
 
-    <section class="halls">
+    <section class="halls section">
       <div class="container">
 
         <h2 class="halls__title headline">Наши залы</h2>
 
         <ul class="halls__list">
-          <li class="halls__item halls__item_backdrop_vibes">
+          <li class="halls__item halls__item_theme_vibes">
             <h3 class="halls__subtitle">
               80&rsquo;s vibes
             </h3>
           </li>
-          <li class="halls__item halls__item_backdrop_star">
+          <li class="halls__item halls__item_theme_star">
             <h3 class="halls__subtitle">
               Star wars
             </h3>
           </li>
-          <li class="halls__item halls__item_backdrop_wild">
+          <li class="halls__item halls__item_theme_wild">
             <h3 class="halls__subtitle">
               Wild west
             </h3>
           </li>
-          <li class="halls__item halls__item_backdrop_neon">
+          <li class="halls__item halls__item_theme_neon">
             <h3 class="halls__subtitle">
               Neon style
             </h3>
@@ -71,16 +72,13 @@
       </div>
     </section>
 
-    <section class="booking">
+    <section class="booking section">
       <div class="container">
 
         <h2 class="booking__title headline">Забронировать</h2>
 
-        <form
-          name="form_booking"
-          action="https://jsonplaceholder.typicode.com/posts"
-          method="POST"
-        >
+        <form name="formBooking" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+
           <fieldset>
             <legend>Выбери зал</legend>
 
@@ -161,7 +159,7 @@
 
               <input name="time" type="time" required>
               <div>
-                <input name="persons" type="number" required min="1">
+                <input name="persons" type="number" min="1" required>
               </div>
             </div>
 
@@ -193,51 +191,56 @@
           <label>
             <input name="politics" type="checkbox" value="confirm" required>Согласен на обработку данных
           </label>
+
         </form>
 
       </div>
     </section>
 
-    <section class="about">
-      <div class="container">
+    <section class="about section">
+      <div class="container about__container">
 
         <h2 class="about__title headline">О нас</h2>
 
-        <div class="about__box-desc">
-          <p class="about__desc">
-            Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.
-          </p>
+        <div class="about__inner">
+          <div class="about__box-desc">
+            <p class="about__desc">Для наших гостей мы создали концептуально новое
+              игровое пространство виртуальной реальности
+              в центральной части города.
+            </p>
 
-          <p class="about__desc">
-            Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.
-          </p>
+            <p class="about__desc">Каждый день мы стараемся создавать
+              для вас самую лучшую игровую атмосферу
+              и радовать Вас топовыми игровыми разработками
+              со всего мира.
+            </p>
+          </div>
+
+          <blockquote class="about__blockquote">
+            <p class="about__quote">GAME OVER &mdash;
+              это место незабываемых впечатлений</p>
+
+            <figure class="about__source">
+              <img
+                class="about__img-author"
+                src="img/about/arkady.jpg"
+                alt="Аркадий Абашкин"
+                width="80"
+                height="80"
+              >
+              <figcaption class="about__caption">
+                <cite class="about__cite">
+                  Аркадий Абашкин, создатель игровой территории GAME OVER
+                </cite>
+              </figcaption>
+            </figure>
+          </blockquote>
         </div>
-
-        <blockquote class="about__blockquote">
-          <p class="about__quote">GAME OVER &mdash;
-            это место незабываемых впечатлений</p>
-
-          <figure class="about__source">
-            <img
-              class="about__img-author"
-              src="img/about/arkady.jpg"
-              alt="Аркадий Абашкин"
-              width="80"
-              height="80"
-            >
-            <figcaption class="about__caption">
-              <cite class="about__cite">Аркадий Абашкин,
-                создатель игровой
-                территории GAME OVER
-              </cite>
-            </figcaption>
-          </figure>
-        </blockquote>
 
       </div>
     </section>
 
-    <section class="faq">
+    <section class="faq section">
       <div class="container">
 
         <h2 class="faq__title headline">Частые вопросы</h2>
@@ -265,23 +268,23 @@
 
   </main>
 
-  <footer class="contacts">
+  <footer class="contacts section">
     <div class="container">
 
       <h2 class="contacts__title headline">Контакты</h2>
 
       <address class="contacts__address">
-        <p class="contacts__text contacts__text_ico_location">г. Москва
+        <p class="contacts__text contacts__text_icon_location">г. Москва
           ул. Аквамарина, 16
         </p>
 
-        <p class="contacts__text contacts__text_ico_phone contacts__text_indent_external">
+        <p class="contacts__text contacts__text_icon_phone contacts__text_indent_external">
           <a href="tel:89509302893">
             8 (950) 930 - 28 - 93
           </a>
         </p>
 
-        <p class="contacts__text contacts__text_ico_envelope">
+        <p class="contacts__text contacts__text_icon_envelope">
           <a href="mailto:gameover@gmail.com">
             GameOver@gmail.com
           </a>

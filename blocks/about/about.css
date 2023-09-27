@@ -1,18 +1,28 @@
-.about {
-  padding: 50px 0;
+.about__container {
+  display: flow-root;
+  background-image: url(../../img/about/about-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 600px 596px;
+  background-position: bottom left 30px;
 }
 
 .about__title {
-  margin: 0 0 50px;
+  margin: 0 0 46px;
+}
+
+.about__inner {
+  float: right;
+  max-width: 500px;
 }
 
 .about__box-desc {
-  margin-bottom: 78px;
+  margin-bottom: 58px;
 }
 
 .about__desc {
   font-size: 20px;
   line-height: 1.4;
+  white-space: pre-line;
 }
 
 .about__desc:not(:last-child) {
@@ -21,12 +31,12 @@
 
 .about__blockquote {
   margin: 0;
-  padding-left: 55px;
+  padding-left: 31px;
 }
 
 .about__quote {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
@@ -36,8 +46,8 @@
 .about__quote::before {
   content: "“";
   position: absolute;
-  top: -8px;
-  left: -55px;
+  top: -11px;
+  left: -31px;
   font-weight: 900;
   color: #6c0287;
 }
@@ -74,5 +84,4 @@
 
 .about__cite {
   font-style: normal;
-  white-space: pre-line;
 }

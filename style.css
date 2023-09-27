@@ -1,6 +1,7 @@
 @import "styles/normalize.css";
 @import "styles/global.css";
 @import "blocks/present/present.css";
+@import "blocks/section/section.css";
 @import "blocks/headline/headline.css";
 @import "blocks/halls/halls.css";
 @import "blocks/booking/booking.css";
