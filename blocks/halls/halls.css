@@ -1,10 +1,15 @@
+.halls {
+  font-size: 0;
+}
+
 .halls__title {
   margin-bottom: 60px;
 }
 
 .halls__item {
-  min-height: 710px;
-  padding: 315px 0;
+  display: inline-block;
+  width: calc(100% - 50% - 10px);
+  padding: 135px 0 134px;
   text-align: center;
   text-transform: uppercase;
   background-repeat: no-repeat;
@@ -12,8 +17,12 @@
   background-position: center;
 }
 
-.halls__item:not(:last-child) {
-  margin-bottom: 60px;
+.halls__item:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.halls__item_indent-external_bottom {
+  margin-bottom: 20px;
 }
 
 .halls__item_theme_vibes {

@@ -47,12 +47,12 @@
         <h2 class="halls__title headline">Наши залы</h2>
 
         <ul class="halls__list">
-          <li class="halls__item halls__item_theme_vibes">
+          <li class="halls__item halls__item_theme_vibes halls__item_indent-external_bottom">
             <h3 class="halls__subtitle">
               80&rsquo;s vibes
             </h3>
           </li>
-          <li class="halls__item halls__item_theme_star">
+          <li class="halls__item halls__item_theme_star halls__item_indent-external_bottom">
             <h3 class="halls__subtitle">
               Star wars
             </h3>
@@ -198,18 +198,20 @@
     </section>
 
     <section class="about section">
-      <div class="container about__container">
+      <div class="container">
 
         <h2 class="about__title headline">О нас</h2>
 
+        <div class="about__background"></div>
+
         <div class="about__inner">
           <div class="about__box-desc">
-            <p class="about__desc">Для наших гостей мы создали концептуально новое
+            <p class="about__desc text">Для наших гостей мы создали концептуально новое
               игровое пространство виртуальной реальности
               в центральной части города.
             </p>
 
-            <p class="about__desc">Каждый день мы стараемся создавать
+            <p class="about__desc text">Каждый день мы стараемся создавать
               для вас самую лучшую игровую атмосферу
               и радовать Вас топовыми игровыми разработками
               со всего мира.
@@ -222,20 +224,82 @@
 
             <figure class="about__source">
               <img
-                class="about__img-author"
+                class="about__image"
                 src="img/about/arkady.jpg"
                 alt="Аркадий Абашкин"
                 width="80"
                 height="80"
               >
               <figcaption class="about__caption">
-                <cite class="about__cite">
+                <cite class="about__cite text">
                   Аркадий Абашкин, создатель игровой территории GAME OVER
                 </cite>
               </figcaption>
             </figure>
           </blockquote>
         </div>
+
+      </div>
+    </section>
+
+    <section class="reviews section">
+      <div class="container">
+
+        <h2 class="reviews__title headline">Отзывы посетителей</h2>
+
+        <ul>
+          <li class="reviews__item">
+            <figure class="reviews__author">
+              <img
+                class="reviews__image reviews__image_position_top"
+                src="img/reviews/max.jpg"
+                alt=""
+                width="280"
+                height="280"
+              >
+
+              <figcaption class="reviews__caption text">Макс Самойлов</figcaption>
+            </figure>
+
+            <p class="reviews__text text">
+              Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
+            </p>
+          </li>
+          <li class="reviews__item">
+            <figure class="reviews__author">
+              <img
+                class="reviews__image reviews__image_position_closer-top"
+                src="img/reviews/oksana.jpg"
+                alt=""
+                width="280"
+                height="280"
+              >
+
+              <figcaption class="reviews__caption text">Оксана Григорьева</figcaption>
+            </figure>
+
+            <p class="reviews__text text">
+              Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений
+            </p>
+          </li>
+          <li class="reviews__item">
+            <figure class="reviews__author">
+              <img
+                class="reviews__image reviews__image_position_below-middle"
+                src="img/reviews/nikita.jpg"
+                alt=""
+                width="280"
+                height="280"
+              >
+
+              <figcaption class="reviews__caption text">Никита Ященко</figcaption>
+            </figure>
+
+            <p class="reviews__text text">
+              Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса
+            </p>
+          </li>
+        </ul>
 
       </div>
     </section>
