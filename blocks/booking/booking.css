@@ -180,7 +180,7 @@
   margin: 0 auto;
 }
 
-.booking_button {
+.booking__button {
   flex: 0 1 300px;
   padding: 16px 50px;
   font-size: 22px;
