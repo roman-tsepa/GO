@@ -1,17 +1,22 @@
-.faq__title {
-  margin: 0 0 40px;
+.faq {
+  padding: 50px 0 45px;
 }
 
-.faq__item {
-  display: flow-root;
-  padding: 21px 70px 20px;
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1180px;
   font-size: 24px;
-  line-height: 1.9;
+  line-height: 28px;
   font-weight: 700;
 }
 
-.faq__item:not(:last-child) {
-  margin-bottom: 20px;
+.faq__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 70px 20px;
 }
 
 .faq__item:nth-child(odd) {
@@ -26,9 +31,7 @@
 
 .faq__item::after {
   content: "";
-  display: block;
-  float: right;
-  width: 46px;
+  flex: 0 0 46px;
   height: 46px;
   background-repeat: no-repeat;
   cursor: pointer;

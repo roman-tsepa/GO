@@ -1,3 +1,190 @@
-.booking__title {
-  margin: 0 0 50px;
+/* ___________________________________________________ section */
+.booking {
+  padding: 80px 0;
+  background-color: #440f51;
+}
+
+/* ___________________________________________________ title */
+.booking__legend {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.booking__legend_appearance_title {
+  margin: 0 auto 40px;
+}
+
+.booking__legend_appearance_subtitle {
+  margin: 0 0 23px;
+}
+
+/* ___________________________________________________ container */
+.booking__inner {
+  display: flex;
+  padding: 0;
+  border: none;
+}
+
+.booking__inner_role_row-halls {
+  gap: 60px;
+  margin: 0 0 60px;
+}
+
+.booking__inner_role_row-entertainments {
+  justify-content: space-between;
+  gap: 100px;
+  margin: 0 auto 60px;
+}
+
+.booking__inner_role_row-reservation {
+  gap: 50px;
+  margin: 0 auto 40px;
+}
+
+.booking__inner_width_limit {
+  max-width: 980px;
+}
+
+.booking__inner_role_column {
+  flex-direction: column;
+  gap: 20px;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+/* ___________________________________________________ additional container */
+.booking__box-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.booking__box-column_gap_medium {
+  gap: 36px;
+}
+
+
+.booking__box-column:nth-child(even) {
+  flex: 0 1 300px;
+}
+
+.booking__box-column:nth-child(odd) {
+  flex: 0 1 280px;
+}
+
+.booking__box-row {
+  display: flex;
+  gap: 32px;
+  max-width: 300px;
+}
+
+/* ___________________________________________________ halls */
+.booking__label-hall {
+  flex: 0 1 250px;
+  padding: 7px 10px 8px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ___________________________________________________ entertainments */
+.booking__label-entertainment {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.booking__input-selection {
+  min-width: 25px;
+  min-height: 25px;
+  cursor: pointer;
+}
+
+/* ___________________________________________________ reservation */
+.booking__label-personal {
+  max-width: 70%;
+  margin: 0 0 6px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.booking__input-field {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #211e1e;
+  border: none;
+}
+
+.booking__input-field_icon_arrow {
+  background-image: url(../../img/booking/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: 21px 15px;
+  background-position: center right 27px;
+}
+
+.booking__input-field_width_limit {
+  max-width: 134px;
+}
+
+.booking__input-field_indent-bottom_small {
+  margin: 0 0 14px;
+}
+
+.booking__input-field::-webkit-outer-spin-button,
+.booking__input-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.booking__input-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.booking__input-field::-webkit-datetime-edit {
+  display: flex;
+  max-height: 28px;
+  cursor: text;
+}
+
+.booking__input-field::-webkit-calendar-picker-indicator {
+  width: 21px;
+  height: 28px;
+  padding: 0;
+  margin: 0 7px 0 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.booking__input-field::placeholder {
+  font-size: 18px;
+  line-height: 28px;
+  color: #211e1e;
+}
+
+/* ___________________________________________________ button */
+.booking__wrap-button {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.booking_button {
+  flex: 0 1 300px;
+  padding: 16px 50px;
+  font-size: 22px;
+  line-height: 28px;
+  color: #6c0287;
+  background-color: #fff;
 }

@@ -1,14 +1,12 @@
 .socials {
-  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 26px;
+  max-width: 278px;
 }
 
 .socials__item {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.socials__item:not(:last-child) {
-  margin-right: 26px;
+  flex: 0 0 50px;
 }
 
 .socials__link {

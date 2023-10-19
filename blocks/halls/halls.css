@@ -1,19 +1,21 @@
-.halls__title {
-  margin-bottom: 60px;
-}
-
 .halls__list {
-  margin: -10px;
-  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .halls__item {
-  display: inline-block;
-  width: calc(50% - 20px);
-  margin: 10px;
-  padding: 135px 0 134px;
-  text-align: center;
-  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 580px;
+  min-height: 349px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -36,9 +38,5 @@
 }
 
 .halls__subtitle {
-  display: inline-block;
-  max-width: 450px;
-  font-size: 70px;
-  line-height: 80px;
-  font-weight: 700;
+  max-width: 270px;
 }

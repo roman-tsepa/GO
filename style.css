@@ -1,9 +1,8 @@
 @import "styles/normalize.css";
 @import "styles/global.css";
-@import "blocks/section.css";
-@import "blocks/headline.css";
-@import "blocks/text.css";
+@import "blocks/header/header.css";
 @import "blocks/present/present.css";
+@import "blocks/entertainments/entertainments.css";
 @import "blocks/halls/halls.css";
 @import "blocks/booking/booking.css";
 @import "blocks/about/about.css";

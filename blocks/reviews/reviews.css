@@ -1,23 +1,27 @@
-.reviews {
-  font-size: 0;
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 980px;
+  margin: 0 auto;
+  line-height: 1.4;
 }
 
-.reviews__title {
-  margin-bottom: 40px;
-}
-
-.reviews__item:not(:last-child) {
-  margin-bottom: 50px;
+.reviews__item {
+  display: flex;
+  gap: 20px;
 }
 
 .reviews__author {
-  display: inline-block;
-  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  flex: 0 0 280px;
 }
 
 .reviews__image {
-  display: inline-block;
-  margin-bottom: 11px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -36,12 +40,8 @@
 
 .reviews__caption {
   max-width: 280px;
-  text-align: center;
 }
 
 .reviews__text {
-  display: inline-block;
-  width: calc(100% - 500px);
-  padding-top: 52px;
-  vertical-align: top;
+  padding: 52px 0 0;
 }

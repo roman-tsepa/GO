@@ -1,31 +1,29 @@
-.about {
-  font-size: 0;
-}
-
-.about__title {
-  margin: 0 0 46px;
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  max-width: 1180px;
 }
 
 .about__background {
-  display: inline-block;
-  width: calc(100% - 580px);
-  margin-right: 80px;
-  padding-bottom: calc(100% - 584px);
-  vertical-align: middle;
+  width: 600px;
+  height: 596px;
   background-image: url(../../img/about/about-background.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
-.about__inner {
-  display: inline-block;
-  max-width: 500px;
-  vertical-align: middle;
+.about__wrap-content {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 500px;
 }
 
 .about__box-desc {
   margin-bottom: 58px;
+  line-height: 1.4;
 }
 
 .about__desc {
@@ -33,17 +31,17 @@
 }
 
 .about__desc:not(:last-child) {
-  margin-bottom: 28px;
+  margin: 0 0 28px;
 }
 
 .about__blockquote {
   margin: 0;
-  padding-left: 31px;
+  padding: 0 0 0 31px;
 }
 
 .about__quote {
   position: relative;
-  margin-bottom: 28px;
+  margin: 0 0 28px;
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
@@ -67,26 +65,28 @@
 }
 
 .about__source {
-  font-size: 0;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
 }
 
 .about__image {
-  margin-right: 30px;
-  vertical-align: middle;
+  max-width: 80px;
+  width: 100%;
   border-radius: 50%;
   object-fit: cover;
   object-position: 50% 30%;
 }
 
 .about__caption {
-  display: inline-block;
-  max-width: 280px;
-  padding-right: 46px;
-  vertical-align: middle;
-  text-align: left;
+  flex: 0 1 300px;
+  padding: 0 30px 0 0;
+  line-height: 1.4;
 }
 
 .about__cite {
+  display: block;
+  max-width: 270px;
   font-style: normal;
 }

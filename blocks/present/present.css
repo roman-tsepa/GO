@@ -1,11 +1,11 @@
 .present {
-  padding: 146px 0 50px 0;
+  padding: 25px 0 50px;
 }
 
 .present__container {
   position: relative;
-  min-height: 823px;
   z-index: 0;
+  min-height: 823px;
 }
 
 .present__container::before {
@@ -22,7 +22,6 @@
 }
 
 .present__title {
-  max-width: 883px;
   font-size: 150px;
   line-height: 1;
   font-weight: 900;
@@ -30,8 +29,61 @@
 }
 
 .present__subtitle {
-  max-width: 469px;
+  margin: 0 0 30px;
   padding-left: 100px;
   font-size: 28px;
   line-height: 50px;
+}
+
+.present__wrapper-have {
+  display: flex;
+  gap: 40px;
+  margin: 0 0 150px;
+  line-height: normal;
+  text-align: center;
+}
+
+.present__have {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 0 1 193px;
+}
+
+.present__have-caption {
+  font-weight: 900;
+  color: #cd06ff;
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+.present__have-caption_size_large {
+  font-size: 75px;
+}
+
+.present__have-caption_size_huge {
+  font-size: 100px;
+}
+
+.present__have-text {
+  font-size: 30px;
+}
+
+.present__button {
+  padding: 25px 69px;
+  font-size: 26px;
+  line-height: 30px;
+  color: #fff;
+  background-color: #6c0287;
+  box-shadow: 0 0 10px #6c0287;
+}
+
+.present__scroll {
+  position: absolute;
+  right: 574px;
+  bottom: 90px;
+  z-index: 2;
+  display: block;
+  width: 97px;
+  height: 97px;
 }
