@@ -106,9 +106,9 @@
           </div>
         </div>
 
-        <button class="button present__button" type="button">
+        <a class="present__anchor" href="#booking">
           Забронировать
-        </button>
+        </a>
 
         <a class="present__scroll" href="#entertainments">
           <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewbox="0 0 97 97" fill="none">
@@ -129,83 +129,24 @@
         </h2>
 
         <ul class="entertainments__list">
-          <li class="entertainments__item">
-            <figure>
-              <img
-                class="entertainments__img"
-                src="img/entertainments/vr.jpg"
-                alt="Мужчина в VR очках"
-                width="380"
-                height="228"
-              >
-              <figcaption class="entertainments__caption">VR очки</figcaption>
-            </figure>
+          <li class="entertainments__item entertainments__item_background_vr">
+            <p class="entertainments__caption">VR очки</p>
           </li>
-
-          <li class="entertainments__item">
-            <figure>
-              <img
-                class="entertainments__img"
-                src="img/entertainments/audio-system.jpg"
-                alt="Аудио-система"
-                width="380"
-                height="228"
-              >
-              <figcaption class="entertainments__caption">Аудио-система 5.1
-                с отличным звуком</figcaption>
-            </figure>
+          <li class="entertainments__item entertainments__item_background_sound-system">
+            <p class="entertainments__caption">Аудио-система 5.1
+              с отличным звуком</p>
           </li>
-
-          <li class="entertainments__item">
-            <figure>
-              <img
-                class="entertainments__img"
-                src="img/entertainments/microphone.jpg"
-                alt="Девушка поет в микрофон"
-                width="380"
-                height="228"
-              >
-              <figcaption class="entertainments__caption">Караоке (4 микрофона)</figcaption>
-            </figure>
+          <li class="entertainments__item entertainments__item_background_karaoke">
+            <p class="entertainments__caption">Караоке (4 микрофона)</p>
           </li>
-
-          <li class="entertainments__item">
-            <figure>
-              <img
-                class="entertainments__img"
-                src="img/entertainments/board-game.jpg"
-                alt="Человек играет в настольную игру"
-                width="380"
-                height="228"
-              >
-              <figcaption class="entertainments__caption">Настольные игры</figcaption>
-            </figure>
+          <li class="entertainments__item entertainments__item_background_board-game">
+            <p class="entertainments__caption">Настольные игры</p>
           </li>
-
-          <li class="entertainments__item">
-            <figure>
-              <img
-                class="entertainments__img"
-                src="img/entertainments/tv-netflix.jpg"
-                alt="Телевизор с изображением логотипа Netflix"
-                width="380"
-                height="228"
-              >
-              <figcaption class="entertainments__caption">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
-            </figure>
+          <li class="entertainments__item entertainments__item_background_tv">
+            <p class="entertainments__caption">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
           </li>
-
-          <li class="entertainments__item">
-            <figure>
-              <img
-                class="entertainments__img"
-                src="img/entertainments/game-console.jpg"
-                alt="Игровая приставка с запущенной игрой"
-                width="380"
-                height="228"
-              >
-              <figcaption class="entertainments__caption">PlayStation 5</figcaption>
-            </figure>
+          <li class="entertainments__item entertainments__item_background_game-console">
+            <p class="entertainments__caption">РlаyStаtiоn 5</p>
           </li>
         </ul>
 
@@ -220,22 +161,30 @@
         <ul class="halls__list">
           <li class="halls__item halls__item_theme_vibes">
             <h3 class="halls__subtitle">
-              80&rsquo;s vibes
+              <a class="halls__link" href="pages/vibes.html">
+                80’s vibes
+              </a>
             </h3>
           </li>
           <li class="halls__item halls__item_theme_star">
             <h3 class="halls__subtitle">
-              Star wars
+              <a class="halls__link" href="pages/star.html">
+                Star wars
+              </a>
             </h3>
           </li>
           <li class="halls__item halls__item_theme_wild">
             <h3 class="halls__subtitle">
-              Wild west
+              <a class="halls__link" href="pages/wild.html">
+                Wild west
+              </a>
             </h3>
           </li>
           <li class="halls__item halls__item_theme_neon">
             <h3 class="halls__subtitle">
-              Neon style
+              <a class="halls__link" href="pages/neon.html">
+                Neon style
+              </a>
             </h3>
           </li>
         </ul>
@@ -473,13 +422,11 @@
                 required
               >
             </div>
-          </fieldset>
 
-          <div class="booking__wrap-button">
             <button class="button booking__button" type="submit">
               Забронировать
             </button>
-          </div>
+          </fieldset>
 
         </form>
 
@@ -548,9 +495,7 @@
                 width="280"
                 height="280"
               >
-              <figcaption class="reviews__caption">
-                Макс Самойлов
-              </figcaption>
+              <figcaption class="reviews__caption">Макс Самойлов</figcaption>
             </figure>
 
             <p class="reviews__text">
@@ -567,9 +512,7 @@
                 width="280"
                 height="280"
               >
-              <figcaption class="reviews__caption">
-                Оксана Григорьева
-              </figcaption>
+              <figcaption class="reviews__caption">Оксана Григорьева</figcaption>
             </figure>
 
             <p class="reviews__text">
@@ -586,9 +529,7 @@
                 width="280"
                 height="280"
               >
-              <figcaption class="reviews__caption">
-                Никита Ященко
-              </figcaption>
+              <figcaption class="reviews__caption">Никита Ященко</figcaption>
             </figure>
 
             <p class="reviews__text">
@@ -607,19 +548,29 @@
 
         <ul class="faq__list">
           <li class="faq__item">
-            Можно ли забронировать комнату онлайн?
+            <button class="faq__button faq__button_theme_white" type="button">
+              Можно ли забронировать комнату онлайн?
+            </button>
           </li>
           <li class="faq__item">
-            Могут ли мне вернуть деньги за бронь?
+            <button class="faq__button faq__button_theme_purple" type="button">
+              Могут ли мне вернуть деньги за бронь?
+            </button>
           </li>
           <li class="faq__item">
-            Какая комната самая популярная?
+            <button class="faq__button faq__button_theme_white" type="button">
+              Какая комната самая популярная?
+            </button>
           </li>
           <li class="faq__item">
-            Как получить VIP карту?
+            <button class="faq__button faq__button_theme_purple" type="button">
+              Как получить VIP карту?
+            </button>
           </li>
           <li class="faq__item">
-            Какая комната самая популярная?
+            <button class="faq__button faq__button_theme_white" type="button">
+              Какая комната самая популярная?
+            </button>
           </li>
         </ul>
 
@@ -690,7 +641,7 @@
       <img
         class="contacts__map"
         src="img/contacts/map.png"
-        alt="Местоположение на карте"
+        alt="Адрес игровой территории GO на карте"
         width="680"
         height="274"
       >

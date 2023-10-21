@@ -6,41 +6,47 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 1180px;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
 }
 
 .faq__item {
   display: flex;
+  align-items: center;
+}
+
+.faq__button {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1180px;
+  width: 100%;
   padding: 21px 70px 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: left;
 }
 
-.faq__item:nth-child(odd) {
+.faq__button_theme_white {
   color: #1c1a1a;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-.faq__item:nth-child(even) {
-  color: #ffffff;
+.faq__button_theme_purple {
+  color: #fff;
   background-color: #440f51;
 }
 
-.faq__item::after {
+.faq__button::after {
   content: "";
   flex: 0 0 46px;
-  height: 46px;
+  min-height: 46px;
   background-repeat: no-repeat;
-  cursor: pointer;
 }
 
-.faq__item:nth-child(odd)::after {
+.faq__button_theme_white::after {
   background-image: url(../../img/faq/open-purple.svg);
 }
 
-.faq__item:nth-child(even)::after {
+.faq__button_theme_purple::after {
   background-image: url(../../img/faq/open-white.svg);
 }

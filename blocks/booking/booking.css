@@ -38,8 +38,11 @@
 }
 
 .booking__inner_role_row-reservation {
-  gap: 50px;
-  margin: 0 auto 40px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  row-gap: 40px;
+  column-gap: 50px;
+  margin: 0 auto;
 }
 
 .booking__inner_width_limit {
@@ -49,6 +52,7 @@
 .booking__inner_role_column {
   flex-direction: column;
   gap: 20px;
+  max-width: 215px;
   font-size: 22px;
   line-height: 25px;
 }
@@ -99,8 +103,10 @@
 .booking__label-entertainment {
   display: flex;
   align-items: center;
+  align-self: flex-start;
   gap: 12px;
   cursor: pointer;
+  user-select: none;
 }
 
 .booking__input-selection {
@@ -173,17 +179,9 @@
 }
 
 /* ___________________________________________________ button */
-.booking__wrap-button {
-  display: flex;
-  justify-content: flex-end;
-  max-width: 980px;
-  margin: 0 auto;
-}
-
 .booking__button {
-  flex: 0 1 300px;
+  align-self: flex-start;
   padding: 16px 50px;
-  font-size: 22px;
   line-height: 28px;
   color: #6c0287;
   background-color: #fff;

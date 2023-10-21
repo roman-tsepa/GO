@@ -92,6 +92,7 @@ iframe {
 }
 
 .button {
+  font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 10px;

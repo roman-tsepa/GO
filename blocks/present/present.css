@@ -13,7 +13,7 @@
   position: absolute;
   right: 30px;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
   width: 675px;
   height: 762px;
   background-image: url(../../img/present/man-vr.png);
@@ -21,7 +21,20 @@
   background-size: contain;
 }
 
+.present__scroll {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  z-index: 4;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 97px;
+  height: 97px;
+}
+
 .present__title {
+  position: relative;
+  z-index: 1;
   font-size: 150px;
   line-height: 1;
   font-weight: 900;
@@ -29,6 +42,8 @@
 }
 
 .present__subtitle {
+  position: relative;
+  z-index: 3;
   margin: 0 0 30px;
   padding-left: 100px;
   font-size: 28px;
@@ -36,6 +51,8 @@
 }
 
 .present__wrapper-have {
+  position: relative;
+  z-index: 3;
   display: flex;
   gap: 40px;
   margin: 0 0 150px;
@@ -69,21 +86,19 @@
   font-size: 30px;
 }
 
-.present__button {
+.present__anchor {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  max-width: 374px;
+  width: 100%;
   padding: 25px 69px;
   font-size: 26px;
   line-height: 30px;
-  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
   background-color: #6c0287;
   box-shadow: 0 0 10px #6c0287;
-}
-
-.present__scroll {
-  position: absolute;
-  right: 574px;
-  bottom: 90px;
-  z-index: 2;
-  display: block;
-  width: 97px;
-  height: 97px;
+  border-radius: 10px;
+  user-select: none;
 }
