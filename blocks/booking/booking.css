@@ -1,10 +1,10 @@
-/* ___________________________________________________ section */
+/* ____________________________________________ section */
 .booking {
   padding: 80px 0;
   background-color: #440f51;
 }
 
-/* ___________________________________________________ title */
+/* ____________________________________________ title */
 .booking__legend {
   font-size: 24px;
   line-height: 28px;
@@ -19,7 +19,7 @@
   margin: 0 0 23px;
 }
 
-/* ___________________________________________________ container */
+/* ____________________________________________ container */
 .booking__inner {
   display: flex;
   padding: 0;
@@ -57,7 +57,7 @@
   line-height: 25px;
 }
 
-/* ___________________________________________________ additional container */
+/* ____________________________________________ additional container */
 .booking__box-column {
   display: flex;
   flex-direction: column;
@@ -67,7 +67,6 @@
 .booking__box-column_gap_medium {
   gap: 36px;
 }
-
 
 .booking__box-column:nth-child(even) {
   flex: 0 1 300px;
@@ -83,7 +82,13 @@
   max-width: 300px;
 }
 
-/* ___________________________________________________ halls */
+/* ____________________________________________ halls */
+.booking__radio-hall:checked + .booking__label-hall {
+  color: #fff;
+  background-color: #6c0287;
+  outline: 3px solid #fff;
+}
+
 .booking__label-hall {
   flex: 0 1 250px;
   padding: 7px 10px 8px;
@@ -99,23 +104,44 @@
   user-select: none;
 }
 
-/* ___________________________________________________ entertainments */
+.booking__label-hall:hover {
+  background-color: #eadeed;
+  outline: 3px solid #640aa3;
+}
+
+.booking__label-hall:focus {
+  background-color: #fff;
+  outline: 3px solid #640aa3;
+}
+
+.booking__label-hall:active {
+  color: #fff;
+  background-color: #6c0287;
+  outline: 3px solid #fff;
+}
+
+/* ____________________________________________ entertainments */
 .booking__label-entertainment {
   display: flex;
   align-items: center;
-  align-self: flex-start;
   gap: 12px;
+  align-self: flex-start;
   cursor: pointer;
   user-select: none;
 }
 
 .booking__input-selection {
-  min-width: 25px;
-  min-height: 25px;
+  min-width: 27px;
+  min-height: 27px;
   cursor: pointer;
 }
 
-/* ___________________________________________________ reservation */
+.booking__input-selection:focus {
+  outline: 1px solid #cd06ff;
+  outline-offset: 2px;
+}
+
+/* ____________________________________________ reservation */
 .booking__label-personal {
   max-width: 70%;
   margin: 0 0 6px;
@@ -131,6 +157,10 @@
   line-height: 28px;
   color: #211e1e;
   border: none;
+}
+
+.booking__input-field:focus {
+  outline: 2px solid #cd06ff;
 }
 
 .booking__input-field_icon_arrow {
@@ -153,10 +183,6 @@
   -webkit-appearance: none;
 }
 
-.booking__input-field::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
 .booking__input-field::-webkit-datetime-edit {
   display: flex;
   max-height: 28px;
@@ -166,8 +192,8 @@
 .booking__input-field::-webkit-calendar-picker-indicator {
   width: 21px;
   height: 28px;
-  padding: 0;
   margin: 0 7px 0 0;
+  padding: 0;
   opacity: 0;
   cursor: pointer;
 }
@@ -178,11 +204,26 @@
   color: #211e1e;
 }
 
-/* ___________________________________________________ button */
+/* ____________________________________________ button */
 .booking__button {
   align-self: flex-start;
   padding: 16px 50px;
   line-height: 28px;
   color: #6c0287;
   background-color: #fff;
+}
+
+.booking__button:hover {
+  background-color: #eadeed;
+  outline: 3px solid #6c0287;
+}
+
+.booking__button:focus {
+  background-color: #fff;
+  outline: 3px solid #6c0287;
+}
+
+.booking__button:active {
+  background-color: #eadeed;
+  outline: 3px solid transparent;
 }

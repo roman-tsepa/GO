@@ -17,15 +17,47 @@
 
 .header__list {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   gap: 40px;
 }
 
+.header__anchor:hover {
+  color: #cd06ff;
+}
+
+.header__anchor:focus {
+  color: #cd06ff;
+  outline: transparent;
+}
+
+.header__anchor:active {
+  color: #640aa3;
+}
+
 .header__button {
-  flex: 0 1 286px;
+  min-width: 280px;
   padding: 12px 32px 13px;
   line-height: 30px;
   color: #fff;
+  background-clip: padding-box;
   border: 3px solid #cd06ff;
+}
+
+.header__button:hover {
+  background-color: #6c0287;
+  border-color: #6c0287;
+}
+
+.header__button:focus {
+  background-color: #6c0287;
+  border-color: transparent;
+  outline: transparent;
+}
+
+.header__button:active {
+  background-color: #640aa3;
+  border-color: transparent;
+  outline: 1px solid #000;
+  outline-offset: -3px;
 }

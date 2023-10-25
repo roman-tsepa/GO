@@ -44,27 +44,31 @@
       <nav class="header__navigation">
         <ul class="header__list">
           <li class="header__item">
-            <a href="#halls">
+            <a class="header__anchor" href="#halls">
               Залы
             </a>
           </li>
+
           <li class="header__item">
-            <a href="#about">
+            <a class="header__anchor" href="#about">
               О нас
             </a>
           </li>
+
           <li class="header__item">
-            <a href="#booking">
+            <a class="header__anchor" href="#booking">
               Бронь
             </a>
           </li>
+
           <li class="header__item">
-            <a href="#reviews">
+            <a class="header__anchor" href="#reviews">
               Отзывы
             </a>
           </li>
+
           <li class="header__item">
-            <a href="#contacts">
+            <a class="header__anchor" href="#contacts">
               Контакты
             </a>
           </li>
@@ -82,7 +86,7 @@
     <section class="present">
       <div class="container present__container">
 
-        <h1 class="present__title">GAME OVER</h1>
+        <h1 class="present__headline">GAME OVER</h1>
 
         <p class="present__subtitle">Новый формат игр и отдыха</p>
 
@@ -112,7 +116,7 @@
 
         <a class="present__scroll" href="#entertainments">
           <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewbox="0 0 97 97" fill="none">
-            <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
+            <circle cx="48.5" cy="48.5" r="48" stroke="white" />
             <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white" />
             <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white" />
           </svg>
@@ -124,7 +128,7 @@
     <section class="entertainments section" id="entertainments">
       <div class="container">
 
-        <h2 class="headline entertainments__title">У нас есть все для классного
+        <h2 class="headline entertainments__headline">У нас есть все для классного
           отдыха с друзьями!
         </h2>
 
@@ -132,19 +136,24 @@
           <li class="entertainments__item entertainments__item_background_vr">
             <p class="entertainments__caption">VR очки</p>
           </li>
+
           <li class="entertainments__item entertainments__item_background_sound-system">
             <p class="entertainments__caption">Аудио-система 5.1
               с отличным звуком</p>
           </li>
+
           <li class="entertainments__item entertainments__item_background_karaoke">
             <p class="entertainments__caption">Караоке (4 микрофона)</p>
           </li>
+
           <li class="entertainments__item entertainments__item_background_board-game">
             <p class="entertainments__caption">Настольные игры</p>
           </li>
+
           <li class="entertainments__item entertainments__item_background_tv">
             <p class="entertainments__caption">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
           </li>
+
           <li class="entertainments__item entertainments__item_background_game-console">
             <p class="entertainments__caption">РlаyStаtiоn 5</p>
           </li>
@@ -160,28 +169,31 @@
 
         <ul class="halls__list">
           <li class="halls__item halls__item_theme_vibes">
-            <h3 class="halls__subtitle">
+            <h3 class="halls__title">
               <a class="halls__link" href="pages/vibes.html">
                 80’s vibes
               </a>
             </h3>
           </li>
+
           <li class="halls__item halls__item_theme_star">
-            <h3 class="halls__subtitle">
+            <h3 class="halls__title">
               <a class="halls__link" href="pages/star.html">
                 Star wars
               </a>
             </h3>
           </li>
+
           <li class="halls__item halls__item_theme_wild">
-            <h3 class="halls__subtitle">
+            <h3 class="halls__title">
               <a class="halls__link" href="pages/wild.html">
                 Wild west
               </a>
             </h3>
           </li>
+
           <li class="halls__item halls__item_theme_neon">
-            <h3 class="halls__subtitle">
+            <h3 class="halls__title">
               <a class="halls__link" href="pages/neon.html">
                 Neon style
               </a>
@@ -196,46 +208,46 @@
       <div class="container">
 
         <h2 class="headline">Забронировать зал просто</h2>
-        <form class="booking__form" name="formBooking" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+        <form name="formBooking" action="https://jsonplaceholder.typicode.com/posts" method="POST">
 
           <fieldset class="booking__inner booking__inner_role_row-halls">
             <legend class="booking__legend booking__legend_appearance_title">Выбери зал</legend>
 
             <input
-              class="visually-hidden"
+              class="booking__radio-hall visually-hidden"
               id="80s"
               name="hallsBooking"
               type="radio"
               value="80s"
             >
-            <label class="booking__label-hall" for="80s">80’s vibes</label>
+            <label class="booking__label-hall" for="80s" tabindex="0">80’s vibes</label>
 
             <input
-              class="visually-hidden"
+              class="booking__radio-hall visually-hidden"
               id="star"
               name="hallsBooking"
               type="radio"
               value="star"
             >
-            <label class="booking__label-hall" for="star">Star wars</label>
+            <label class="booking__label-hall" for="star" tabindex="0">Star wars</label>
 
             <input
-              class="visually-hidden"
+              class="booking__radio-hall visually-hidden"
               id="wild"
               name="hallsBooking"
               type="radio"
               value="wild"
             >
-            <label class="booking__label-hall" for="wild">Wild west</label>
+            <label class="booking__label-hall" for="wild" tabindex="0">Wild west</label>
 
             <input
-              class="visually-hidden"
+              class="booking__radio-hall visually-hidden"
               id="neon"
               name="hallsBooking"
               type="radio"
               value="neon"
             >
-            <label class="booking__label-hall" for="neon">Neon style</label>
+            <label class="booking__label-hall" for="neon" tabindex="0">Neon style</label>
           </fieldset>
 
           <fieldset class="booking__inner booking__inner_role_row-entertainments booking__inner_width_limit">
@@ -460,9 +472,9 @@
               <p class="about__quote">GAME OVER &mdash;
                 это место незабываемых впечатлений</p>
 
-              <figure class="about__source">
+              <figure class="about__box-source">
                 <img
-                  class="about__image"
+                  class="about__img"
                   src="img/about/arkady.jpg"
                   alt="Аркадий Абашкин"
                   width="80"
@@ -487,9 +499,9 @@
 
         <ul class="reviews__list">
           <li class="reviews__item">
-            <figure class="reviews__author">
+            <figure class="reviews__box">
               <img
-                class="reviews__image reviews__image_position_top"
+                class="reviews__img reviews__img_position_top"
                 src="img/reviews/max.jpg"
                 alt="Макс Самойлов"
                 width="280"
@@ -504,9 +516,9 @@
           </li>
 
           <li class="reviews__item">
-            <figure class="reviews__author">
+            <figure class="reviews__box">
               <img
-                class="reviews__image reviews__image_position_closer-top"
+                class="reviews__img reviews__img_position_closer-top"
                 src="img/reviews/oksana.jpg"
                 alt="Оксана Григорьева"
                 width="280"
@@ -521,9 +533,9 @@
           </li>
 
           <li class="reviews__item">
-            <figure class="reviews__author">
+            <figure class="reviews__box">
               <img
-                class="reviews__image reviews__image_position_below-middle"
+                class="reviews__img reviews__img_position_below-middle"
                 src="img/reviews/nikita.jpg"
                 alt="Никита Ященко"
                 width="280"
@@ -552,21 +564,25 @@
               Можно ли забронировать комнату онлайн?
             </button>
           </li>
+
           <li class="faq__item">
             <button class="faq__button faq__button_theme_purple" type="button">
               Могут ли мне вернуть деньги за бронь?
             </button>
           </li>
+
           <li class="faq__item">
             <button class="faq__button faq__button_theme_white" type="button">
               Какая комната самая популярная?
             </button>
           </li>
+
           <li class="faq__item">
             <button class="faq__button faq__button_theme_purple" type="button">
               Как получить VIP карту?
             </button>
           </li>
+
           <li class="faq__item">
             <button class="faq__button faq__button_theme_white" type="button">
               Какая комната самая популярная?
@@ -590,13 +606,13 @@
           </p>
 
           <p class="contacts__text contacts__text_icon_phone contacts__text_indent-bottom_small">
-            <a href="tel:89509302893">
+            <a class="contacts__link" href="tel:89509302893">
               8 (950) 930 - 28 - 93
             </a>
           </p>
 
           <p class="contacts__text contacts__text_icon_envelope">
-            <a href="mailto:gameover@gmail.com">
+            <a class="contacts__link" href="mailto:gameover@gmail.com">
               GameOver@gmail.com
             </a>
           </p>
@@ -653,7 +669,7 @@
 
         <p class="contacts__text-copyright">
           Design by Anastasia Ilina
-          <a href="mailto:ilina9825@gmail.com">
+          <a class="contacts__link" href="mailto:ilina9825@gmail.com">
             ilina9825@gmail.com
           </a>
         </p>
@@ -661,6 +677,14 @@
 
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('click', event => {
+      if (event.target.matches('button')) {
+        event.target.focus()
+      }
+    })
+  </script>
 
 </body>
 

@@ -44,9 +44,27 @@
 }
 
 .faq__button_theme_white::after {
+  background-image: url(../../img/faq/open-purple-transparent.svg);
+}
+
+.faq__button_theme_white:hover::after,
+.faq__button_theme_white:focus::after {
   background-image: url(../../img/faq/open-purple.svg);
 }
 
+.faq__button_theme_white:active::after {
+  background-image: url(../../img/faq/close-purple-transparent.svg);
+}
+
 .faq__button_theme_purple::after {
+  background-image: url(../../img/faq/open-white-transparent.svg);
+}
+
+.faq__button_theme_purple:hover::after,
+.faq__button_theme_purple:focus::after {
   background-image: url(../../img/faq/open-white.svg);
+}
+
+.faq__button_theme_purple:active::after {
+  background-image: url(../../img/faq/close-white-transparent.svg);
 }

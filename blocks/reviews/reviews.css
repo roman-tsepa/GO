@@ -12,7 +12,7 @@
   gap: 20px;
 }
 
-.reviews__author {
+.reviews__box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,20 +21,20 @@
   flex: 0 0 280px;
 }
 
-.reviews__image {
+.reviews__img {
   border-radius: 50%;
   object-fit: cover;
 }
 
-.reviews__image_position_top {
+.reviews__img_position_top {
   object-position: center top;
 }
 
-.reviews__image_position_closer-top {
+.reviews__img_position_closer-top {
   object-position: center 30%;
 }
 
-.reviews__image_position_below-middle {
+.reviews__img_position_below-middle {
   object-position: center 60%;
 }
 

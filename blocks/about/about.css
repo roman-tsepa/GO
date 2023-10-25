@@ -64,14 +64,14 @@
   color: #6c0287;
 }
 
-.about__source {
+.about__box-source {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 30px;
 }
 
-.about__image {
+.about__img {
   max-width: 80px;
   width: 100%;
   border-radius: 50%;

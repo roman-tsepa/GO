@@ -14,21 +14,21 @@
   width: 50px;
   height: 50px;
   outline: 1px solid transparent;
-  outline-offset: 3px;
-  border-radius: 50%;
   transition-property: color, outline-color;
   transition-duration: 0.3s, 0.2s;
   transition-timing-function: ease-in-out;
 }
 
 .socials__link:hover {
-  color: #cd06ff;
+  color: #eadeed;
 }
 
 .socials__link:focus {
+  color: #eadeed;
   outline-color: #cd06ff;
 }
 
 .socials__link:active {
-  color: #840aa3;
+  color: #cd06ff;
+  outline-color: transparent;
 }

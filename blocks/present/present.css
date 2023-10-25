@@ -21,18 +21,7 @@
   background-size: contain;
 }
 
-.present__scroll {
-  position: absolute;
-  top: 82%;
-  left: 50%;
-  z-index: 4;
-  transform: translate(-50%, -50%);
-  display: block;
-  width: 97px;
-  height: 97px;
-}
-
-.present__title {
+.present__headline {
   position: relative;
   z-index: 1;
   font-size: 150px;
@@ -101,4 +90,56 @@
   box-shadow: 0 0 10px #6c0287;
   border-radius: 10px;
   user-select: none;
+}
+
+.present__anchor:hover {
+  background-color: #840aa3;
+}
+
+.present__anchor:focus {
+  background-color: #840aa3;
+  outline: transparent;
+}
+
+.present__anchor:active {
+  background-color: #640aa3;
+}
+
+.present__scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  z-index: 4;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 97px;
+  height: 97px;
+}
+
+.present__scroll:hover circle {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.present__scroll:hover rect {
+  fill: #6c0287;
+  stroke: #6c0287;
+}
+
+.present__scroll:focus {
+  outline: 1px solid #cd06ff;
+}
+
+.present__scroll:active {
+  outline: transparent;
+}
+
+.present__scroll:active circle {
+  fill: #cd06ff;
+  stroke: #cd06ff;
+}
+
+.present__scroll:active rect {
+  fill: #fff;
+  stroke: #fff;
 }

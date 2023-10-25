@@ -90,3 +90,16 @@
 .contacts__text-copyright:last-child {
   text-align: right;
 }
+
+.contacts__link:hover {
+  color: #cd06ff;
+}
+
+.contacts__link:focus {
+  color: #cd06ff;
+  outline: transparent;
+}
+
+.contacts__link:active {
+  color: #640aa3;
+}
