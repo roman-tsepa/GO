@@ -21,6 +21,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 30%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.entertainments__item:hover {
+  transform: scale(1.1);
 }
 
 .entertainments__item_background_vr {

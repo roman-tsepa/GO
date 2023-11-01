@@ -41,6 +41,7 @@
   flex: 0 0 46px;
   min-height: 46px;
   background-repeat: no-repeat;
+  transition: background-image 0.3s ease-in-out;
 }
 
 .faq__button_theme_white::after {

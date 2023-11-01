@@ -83,12 +83,6 @@
 }
 
 /* ____________________________________________ halls */
-.booking__radio-hall:checked + .booking__label-hall {
-  color: #fff;
-  background-color: #6c0287;
-  outline: 3px solid #fff;
-}
-
 .booking__label-hall {
   flex: 0 1 250px;
   padding: 7px 10px 8px;
@@ -100,24 +94,34 @@
   color: #000;
   background-color: #fff;
   border-radius: 8px;
+  outline: 3px solid transparent;
   cursor: pointer;
   user-select: none;
+  transition: color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out,
+    outline 0.2s ease-in-out;
+}
+
+.booking__radio-hall:checked + .booking__label-hall {
+  color: #fff;
+  background-color: #6c0287;
+  outline-color: #fff;
 }
 
 .booking__label-hall:hover {
   background-color: #eadeed;
-  outline: 3px solid #640aa3;
+  outline-color: #640aa3;
 }
 
 .booking__label-hall:focus {
   background-color: #fff;
-  outline: 3px solid #640aa3;
+  outline-color: #640aa3;
 }
 
 .booking__label-hall:active {
   color: #fff;
   background-color: #6c0287;
-  outline: 3px solid #fff;
+  outline-color: #fff;
 }
 
 /* ____________________________________________ entertainments */
@@ -134,6 +138,7 @@
   min-width: 27px;
   min-height: 27px;
   cursor: pointer;
+  transition: outline 0.2s ease-in-out;
 }
 
 .booking__input-selection:focus {
@@ -157,6 +162,7 @@
   line-height: 28px;
   color: #211e1e;
   border: none;
+  transition: outline 0.2s ease-in-out;
 }
 
 .booking__input-field:focus {
@@ -211,19 +217,22 @@
   line-height: 28px;
   color: #6c0287;
   background-color: #fff;
+  outline: 3px solid transparent;
+  transition: background-color 0.3s ease-in-out,
+    outline 0.2s ease-in-out;
 }
 
 .booking__button:hover {
   background-color: #eadeed;
-  outline: 3px solid #6c0287;
+  outline-color: #6c0287;
 }
 
 .booking__button:focus {
   background-color: #fff;
-  outline: 3px solid #6c0287;
+  outline-color: #6c0287;
 }
 
 .booking__button:active {
   background-color: #eadeed;
-  outline: 3px solid transparent;
+  outline-color: transparent;
 }

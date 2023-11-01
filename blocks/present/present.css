@@ -90,6 +90,7 @@
   box-shadow: 0 0 10px #6c0287;
   border-radius: 10px;
   user-select: none;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .present__anchor:hover {
@@ -114,20 +115,31 @@
   display: block;
   width: 97px;
   height: 97px;
+  outline: 1px solid transparent;
+  transition: outline 0.2s ease-in-out;
 }
 
-.present__scroll:hover circle {
-  fill: #fff;
+.present__scroll circle,
+.present__scroll rect {
+  transition: color 0.3s ease-in-out,
+    stroke 0.3s ease-in-out;
+}
+
+.present__scroll circle {
+  color: transparent;
   stroke: #fff;
 }
 
+.present__scroll:hover circle {
+  color: #fff;
+}
+
 .present__scroll:hover rect {
-  fill: #6c0287;
-  stroke: #6c0287;
+  color: #6c0287;
 }
 
 .present__scroll:focus {
-  outline: 1px solid #cd06ff;
+  outline-color: #cd06ff;
 }
 
 .present__scroll:active {
@@ -135,11 +147,10 @@
 }
 
 .present__scroll:active circle {
-  fill: #cd06ff;
+  color: #cd06ff;
   stroke: #cd06ff;
 }
 
 .present__scroll:active rect {
-  fill: #fff;
-  stroke: #fff;
+  color: #fff;
 }
