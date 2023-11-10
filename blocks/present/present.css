@@ -8,7 +8,7 @@
   min-height: 823px;
 }
 
-.present__container::before {
+.present__container:before {
   content: "";
   position: absolute;
   right: 30px;
@@ -58,7 +58,7 @@
 
 .present__have-caption {
   font-weight: 900;
-  color: #cd06ff;
+  color: var(--present-caption-color);
   font-variant: small-caps;
   text-transform: lowercase;
 }
@@ -86,24 +86,24 @@
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #6c0287;
-  box-shadow: 0 0 10px #6c0287;
+  background-color: var(--present-link-basic-color);
+  box-shadow: 0 0 10px var(--present-link-basic-color);
   border-radius: 10px;
   user-select: none;
-  transition: background-color 0.3s ease-in-out;
+  transition: background .3s ease-in-out;
 }
 
 .present__anchor:hover {
-  background-color: #840aa3;
+  background-color: var(--present-link-accent-color);
 }
 
 .present__anchor:focus {
-  background-color: #840aa3;
-  outline: transparent;
+  background-color: var(--present-link-accent-color);
+  outline: #fff0;
 }
 
 .present__anchor:active {
-  background-color: #640aa3;
+  background-color: var(--present-link-active-color);
 }
 
 .present__scroll {
@@ -115,42 +115,43 @@
   display: block;
   width: 97px;
   height: 97px;
-  outline: 1px solid transparent;
-  transition: outline 0.2s ease-in-out;
+  outline: 1px solid #fff0;
+  transition: outline .2s ease-in-out;
 }
 
 .present__scroll circle,
 .present__scroll rect {
-  transition: color 0.3s ease-in-out,
-    stroke 0.3s ease-in-out;
+  transition:
+    color .3s ease-in-out,
+    stroke .3s ease-in-out;
 }
 
 .present__scroll circle {
-  color: transparent;
-  stroke: #fff;
+  color: #fff0;
+  stroke: var(--icon-basic-color);
 }
 
 .present__scroll:hover circle {
-  color: #fff;
+  color: var(--icon-basic-color);
 }
 
 .present__scroll:hover rect {
-  color: #6c0287;
+  color: var(--present-rect-hover-color);
 }
 
 .present__scroll:focus {
-  outline-color: #cd06ff;
+  outline-color: var(--link-accent-color);
 }
 
 .present__scroll:active {
-  outline: transparent;
+  outline: #fff0;
 }
 
 .present__scroll:active circle {
-  color: #cd06ff;
-  stroke: #cd06ff;
+  color: var(--icon-active-color);
+  stroke: var(--icon-active-color);
 }
 
 .present__scroll:active rect {
-  color: #fff;
+  color: var(--icon-basic-color);
 }

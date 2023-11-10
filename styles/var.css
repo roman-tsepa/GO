@@ -1,0 +1,51 @@
+:root {
+  --text-color: #fff;
+  --body-color: #1b1a1b;
+
+  --link-accent-color: #cd06ff;
+  --link-active-color: #640aa3;
+
+  --icon-basic-color: #fff;
+  --icon-accent-color: #eadeed;
+  --icon-active-color: #cd06ff;
+
+  --present-caption-color: #cd06ff;
+  --present-link-basic-color: #6c0287;
+  --present-link-accent-color: #840aa3;
+  --present-link-active-color: #640aa3;
+  --present-rect-hover-color: #6c0287;
+
+  --halls-text-active-color: #eadeed;
+
+  --header-btn-accent-color: #6c0287;
+  --header-btn-active-color: #640aa3;
+  --header-btn-border-basic-color: #cd06ff;
+  --header-btn-outline-active-color: #000;
+
+  --booking-color: #440f51;
+  --booking-hall-text-basic-color: #000;
+  --booking-hall-text-active-color: #fff;
+  --booking-hall-basic-color: #fff;
+  --booking-hall-hover-color: #eadeed;
+  --booking-hall-active-color: #6c0287;
+  --booking-hall-outline-accent-color: #640aa3;
+  --booking-hall-outline-active-color: #fff;
+  --booking-input-text-color: #211e1e;
+  --booking-input-outline-color: #cd06ff;
+  --booking-btn-text-color: #6c0287;
+  --booking-btn-basic-color: #fff;
+  --booking-btn-interaction-color: #eadeed;
+  --booking-btn-outline-color: #6c0287;
+
+  --about-symbol-color: #6c0287;
+
+  --feedback-grad-primary-color: 196, 196, 196, .0;
+  --feedback-grad-secondary-color: 108, 2, 135, .5;
+
+  --faq-btn-themeLight-text-color: #1c1a1a;
+  --faq-btn-themeLight-color: #fff;
+  --faq-btn-themeDark-color: #440f51;
+  --faq-btn-themeDark-text-color: #fff;
+
+  --contacts-secondary-color: #370a37;
+}

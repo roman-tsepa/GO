@@ -62,7 +62,7 @@
           </li>
 
           <li class="header__item">
-            <a class="header__anchor" href="#reviews">
+            <a class="header__anchor" href="#feedback">
               Отзывы
             </a>
           </li>
@@ -137,7 +137,7 @@
             <p class="entertainments__caption">VR очки</p>
           </li>
 
-          <li class="entertainments__item entertainments__item_background_sound-system">
+          <li class="entertainments__item entertainments__item_background_sound-system entertainments__item_offset_y">
             <p class="entertainments__caption">Аудио-система 5.1
               с отличным звуком</p>
           </li>
@@ -150,7 +150,7 @@
             <p class="entertainments__caption">Настольные игры</p>
           </li>
 
-          <li class="entertainments__item entertainments__item_background_tv">
+          <li class="entertainments__item entertainments__item_background_tv entertainments__item_offset_y">
             <p class="entertainments__caption">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
           </li>
 
@@ -168,36 +168,28 @@
         <h2 class="headline">Наши залы</h2>
 
         <ul class="halls__list">
-          <li class="halls__item halls__item_theme_vibes">
-            <h3 class="halls__title">
-              <a class="halls__link" href="pages/vibes.html">
-                80’s vibes
-              </a>
-            </h3>
+          <li class="halls__item">
+            <a class="halls__link halls__link_theme_vibes" href="pages/vibes.html">
+              80’s vibes
+            </a>
           </li>
 
-          <li class="halls__item halls__item_theme_star">
-            <h3 class="halls__title">
-              <a class="halls__link" href="pages/star.html">
-                Star wars
-              </a>
-            </h3>
+          <li class="halls__item">
+            <a class="halls__link halls__link_theme_star" href="pages/star.html">
+              Star wars
+            </a>
           </li>
 
-          <li class="halls__item halls__item_theme_wild">
-            <h3 class="halls__title">
-              <a class="halls__link" href="pages/wild.html">
-                Wild west
-              </a>
-            </h3>
+          <li class="halls__item">
+            <a class="halls__link halls__link_theme_wild" href="pages/wild.html">
+              Wild west
+            </a>
           </li>
 
-          <li class="halls__item halls__item_theme_neon">
-            <h3 class="halls__title">
-              <a class="halls__link" href="pages/neon.html">
-                Neon style
-              </a>
-            </h3>
+          <li class="halls__item">
+            <a class="halls__link halls__link_theme_neon" href="pages/neon.html">
+              Neon style
+            </a>
           </li>
         </ul>
 
@@ -208,7 +200,7 @@
       <div class="container">
 
         <h2 class="headline">Забронировать зал просто</h2>
-        <form name="formBooking" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+        <form name="bookingForm" action="https://jsonplaceholder.typicode.com/posts" method="POST">
 
           <fieldset class="booking__inner booking__inner_role_row-halls">
             <legend class="booking__legend booking__legend_appearance_title">Выбери зал</legend>
@@ -216,7 +208,7 @@
             <input
               class="booking__radio-hall visually-hidden"
               id="80s"
-              name="hallsBooking"
+              name="bookingHall"
               type="radio"
               value="80s"
             >
@@ -225,7 +217,7 @@
             <input
               class="booking__radio-hall visually-hidden"
               id="star"
-              name="hallsBooking"
+              name="bookingHall"
               type="radio"
               value="star"
             >
@@ -234,7 +226,7 @@
             <input
               class="booking__radio-hall visually-hidden"
               id="wild"
-              name="hallsBooking"
+              name="bookingHall"
               type="radio"
               value="wild"
             >
@@ -243,7 +235,7 @@
             <input
               class="booking__radio-hall visually-hidden"
               id="neon"
-              name="hallsBooking"
+              name="bookingHall"
               type="radio"
               value="neon"
             >
@@ -259,7 +251,7 @@
               <label class="booking__label-entertainment">
                 <input
                   class="booking__input-selection"
-                  name="consoleBooking"
+                  name="bookingConsole"
                   type="radio"
                   value="playstation"
                 >
@@ -269,7 +261,7 @@
               <label class="booking__label-entertainment">
                 <input
                   class="booking__input-selection"
-                  name="consoleBooking"
+                  name="bookingConsole"
                   type="radio"
                   value="sega"
                 >
@@ -279,7 +271,7 @@
               <label class="booking__label-entertainment">
                 <input
                   class="booking__input-selection"
-                  name="consoleBooking"
+                  name="bookingConsole"
                   type="radio"
                   value="xbox"
                 >
@@ -289,7 +281,7 @@
               <label class="booking__label-entertainment">
                 <input
                   class="booking__input-selection"
-                  name="consoleBooking"
+                  name="bookingConsole"
                   type="radio"
                   value="dendy"
                 >
@@ -303,7 +295,7 @@
               <label class="booking__label-entertainment">
                 <input
                   class="booking__input-selection"
-                  name="boardBooking"
+                  name="bookingBoard"
                   type="checkbox"
                   value="jenga"
                 >
@@ -313,7 +305,7 @@
               <label class="booking__label-entertainment">
                 <input
                   class="booking__input-selection"
-                  name="boardBooking"
+                  name="bookingBoard"
                   type="checkbox"
                   value="monopoly"
                 >
@@ -323,7 +315,7 @@
               <label class="booking__label-entertainment">
                 <input
                   class="booking__input-selection"
-                  name="boardBooking"
+                  name="bookingBoard"
                   type="checkbox"
                   value="munchkin"
                 >
@@ -333,7 +325,7 @@
               <label class="booking__label-entertainment">
                 <input
                   class="booking__input-selection"
-                  name="boardBooking"
+                  name="bookingBoard"
                   type="checkbox"
                   value="alias"
                 >
@@ -347,7 +339,7 @@
               <label class="booking__label-entertainment">
                 <input
                   class="booking__input-selection"
-                  name="optionallyBooking"
+                  name="bookingOptionally"
                   type="checkbox"
                   value="karaoke"
                 >
@@ -357,7 +349,7 @@
               <label class="booking__label-entertainment">
                 <input
                   class="booking__input-selection"
-                  name="optionallyBooking"
+                  name="bookingOptionally"
                   type="checkbox"
                   value="vr"
                 >
@@ -373,13 +365,13 @@
               <div class="booking__box-row">
                 <input
                   class="booking__input-field booking__input-field_icon_arrow booking__input-field_width_limit"
-                  name="dateBooking"
+                  name="bookingDate"
                   type="date"
                   required
                 >
                 <input
                   class="booking__input-field booking__input-field_icon_arrow booking__input-field_width_limit"
-                  name="timeBooking"
+                  name="bookingTime"
                   type="time"
                   required
                 >
@@ -387,7 +379,7 @@
 
               <input
                 class="booking__input-field booking__input-field_icon_arrow"
-                name="quantityBooking"
+                name="bookingQuantity"
                 type="number"
                 min="1"
                 placeholder="Сколько человек"
@@ -400,7 +392,7 @@
               <input
                 class="booking__input-field booking__input-field_indent-bottom_small"
                 id="fname"
-                name="fName"
+                name="bookingFname"
                 type="text"
                 required
               >
@@ -409,7 +401,7 @@
               <input
                 class="booking__input-field"
                 id="lname"
-                name="lName"
+                name="bookingLname"
                 type="text"
                 required
               >
@@ -420,7 +412,7 @@
               <input
                 class="booking__input-field booking__input-field_indent-bottom_small"
                 id="phone"
-                name="phone"
+                name="bookingPhone"
                 type="tel"
                 required
               >
@@ -429,7 +421,7 @@
               <input
                 class="booking__input-field"
                 id="email"
-                name="email"
+                name="bookingEmail"
                 type="email"
                 required
               >
@@ -492,59 +484,65 @@
       </div>
     </section>
 
-    <section class="reviews section" id="reviews">
+    <section class="feedback section" id="feedback">
       <div class="container">
 
         <h2 class="headline">Отзывы посетителей</h2>
 
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <figure class="reviews__box">
-              <img
-                class="reviews__img reviews__img_position_top"
-                src="img/reviews/max.jpg"
-                alt="Макс Самойлов"
-                width="280"
-                height="280"
-              >
-              <figcaption class="reviews__caption">Макс Самойлов</figcaption>
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <figure class="feedback__box">
+              <div class="feedback__gradient">
+                <img
+                  class="feedback__img feedback__img_position_top"
+                  src="img/feedback/max.jpg"
+                  alt="Макс Самойлов"
+                  width="280"
+                  height="280"
+                >
+              </div>
+              <figcaption class="feedback__caption">Макс Самойлов</figcaption>
             </figure>
 
-            <p class="reviews__text">
+            <p class="feedback__text">
               Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
             </p>
           </li>
 
-          <li class="reviews__item">
-            <figure class="reviews__box">
-              <img
-                class="reviews__img reviews__img_position_closer-top"
-                src="img/reviews/oksana.jpg"
-                alt="Оксана Григорьева"
-                width="280"
-                height="280"
-              >
-              <figcaption class="reviews__caption">Оксана Григорьева</figcaption>
+          <li class="feedback__item">
+            <figure class="feedback__box">
+              <div class="feedback__gradient">
+                <img
+                  class="feedback__img feedback__img_position_closer-top"
+                  src="img/feedback/oksana.jpg"
+                  alt="Оксана Григорьева"
+                  width="280"
+                  height="280"
+                >
+              </div>
+              <figcaption class="feedback__caption">Оксана Григорьева</figcaption>
             </figure>
 
-            <p class="reviews__text">
+            <p class="feedback__text">
               Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений
             </p>
           </li>
 
-          <li class="reviews__item">
-            <figure class="reviews__box">
-              <img
-                class="reviews__img reviews__img_position_below-middle"
-                src="img/reviews/nikita.jpg"
-                alt="Никита Ященко"
-                width="280"
-                height="280"
-              >
-              <figcaption class="reviews__caption">Никита Ященко</figcaption>
+          <li class="feedback__item">
+            <figure class="feedback__box">
+              <div class="feedback__gradient">
+                <img
+                  class="feedback__img feedback__img_position_below-middle"
+                  src="img/feedback/nikita.jpg"
+                  alt="Никита Ященко"
+                  width="280"
+                  height="280"
+                >
+              </div>
+              <figcaption class="feedback__caption">Никита Ященко</figcaption>
             </figure>
 
-            <p class="reviews__text">
+            <p class="feedback__text">
               Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса
             </p>
           </li>
@@ -560,31 +558,31 @@
 
         <ul class="faq__list">
           <li class="faq__item">
-            <button class="faq__button faq__button_theme_white" type="button">
+            <button class="faq__button faq__button_theme_light" type="button">
               Можно ли забронировать комнату онлайн?
             </button>
           </li>
 
           <li class="faq__item">
-            <button class="faq__button faq__button_theme_purple" type="button">
+            <button class="faq__button faq__button_theme_dark" type="button">
               Могут ли мне вернуть деньги за бронь?
             </button>
           </li>
 
           <li class="faq__item">
-            <button class="faq__button faq__button_theme_white" type="button">
+            <button class="faq__button faq__button_theme_light" type="button">
               Какая комната самая популярная?
             </button>
           </li>
 
           <li class="faq__item">
-            <button class="faq__button faq__button_theme_purple" type="button">
+            <button class="faq__button faq__button_theme_dark" type="button">
               Как получить VIP карту?
             </button>
           </li>
 
           <li class="faq__item">
-            <button class="faq__button faq__button_theme_white" type="button">
+            <button class="faq__button faq__button_theme_light" type="button">
               Какая комната самая популярная?
             </button>
           </li>

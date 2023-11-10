@@ -1,6 +1,10 @@
 .contacts {
   padding: 55px 0 10px 0;
-  background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
+  background: linear-gradient(
+    180deg,
+    var(--body-color) 0%,
+    var(--contacts-secondary-color) 100%
+  );
 }
 
 .contacts__container {
@@ -92,18 +96,18 @@
 }
 
 .contacts__link {
-  transition: color 0.3s ease-in-out;
+  transition: color .3s ease-in-out;
 }
 
 .contacts__link:hover {
-  color: #cd06ff;
+  color: var(--link-accent-color);
 }
 
 .contacts__link:focus {
-  color: #cd06ff;
-  outline: transparent;
+  color: var(--link-accent-color);
+  outline: #fff0;
 }
 
 .contacts__link:active {
-  color: #640aa3;
+  color: var(--link-active-color);
 }

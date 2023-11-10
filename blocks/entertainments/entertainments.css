@@ -6,7 +6,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: flex-start;
   gap: 40px 20px;
+  min-height: 565px;
   line-height: 1.4;
   font-weight: 700;
 }
@@ -21,7 +23,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 30%;
-  transition: transform 0.3s ease-in-out;
+  transition: transform .3s ease-in-out;
 }
 
 .entertainments__item:hover {
@@ -50,6 +52,11 @@
 
 .entertainments__item_background_game-console {
   background-image: url(../../img/entertainments/game-console.jpg);
+}
+
+.entertainments__item_offset_y {
+  transform: translateY(70px);
+  transform-origin: center -260%;
 }
 
 .entertainments__caption {

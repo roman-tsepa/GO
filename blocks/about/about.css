@@ -48,20 +48,20 @@
   white-space: pre-line;
 }
 
-.about__quote::before {
+.about__quote:before {
   content: "“";
   position: absolute;
   top: -11px;
   left: -31px;
   font-weight: 900;
-  color: #6c0287;
+  color: var(--about-symbol-color);
 }
 
-.about__quote::after {
+.about__quote:after {
   content: " ”";
   display: inline;
   font-weight: 900;
-  color: #6c0287;
+  color: var(--about-symbol-color);
 }
 
 .about__box-source {

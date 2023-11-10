@@ -12,69 +12,77 @@
 
 .halls__item {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 0 1 580px;
   min-height: 349px;
   padding: 50px 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.halls__item:hover {
-  z-index: 2;
-  transform: scale(1.1);
-}
-
-.halls__item_theme_vibes {
-  background-image: url(../../img/halls/80s.jpg);
-}
-
-.halls__item_theme_star {
-  background-image: url(../../img/halls/star-wars.jpg);
-}
-
-.halls__item_theme_wild {
-  background-image: url(../../img/halls/wild-west.jpg);
-}
-
-.halls__item_theme_neon {
-  background-image: url(../../img/halls/neon-style.jpg);
-}
-
-.halls__title {
-  max-width: 270px;
 }
 
 .halls__link {
   display: block;
-  outline: transparent;
-  transition: color 0.3s ease-in-out;
+  max-width: 270px;
+  outline: #fff0;
+  transition: color .3s ease-in-out;
 }
 
-.halls__link::before {
-  position: absolute;
+.halls__link:before {
   content: "";
-  top: 0;
-  left: 0;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
   width: 100%;
   height: 100%;
-  outline: 3px solid transparent;
-  transition: outline 0.2s ease-in-out;
+  outline: 3px solid #fff0;
+  transition: outline .2s ease-in-out;
 }
 
-.halls__link:focus::before {
-  outline-color: #cd06ff;
+.halls__link:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transition: background .4s ease-in-out;
+}
+
+.halls__link:hover:after,
+.halls__link:focus:after {
+  background-size: 110%;
+}
+
+.halls__link:focus:before {
+  outline-color: var(--link-accent-color);
 }
 
 .halls__link:active {
-  color: #eadeed;
+  color: var(--halls-text-active-color);
 }
 
-.halls__link:active::before {
-  outline-color: transparent;
+.halls__link:active:before {
+  outline-color: #fff0;
+}
+
+.halls__link_theme_vibes:after {
+  background-image: url(../../img/halls/80s.jpg);
+}
+
+.halls__link_theme_star:after {
+  background-image: url(../../img/halls/star-wars.jpg);
+}
+
+.halls__link_theme_wild:after {
+  background-image: url(../../img/halls/wild-west.jpg);
+}
+
+.halls__link_theme_neon:after {
+  background-image: url(../../img/halls/neon-style.jpg);
 }

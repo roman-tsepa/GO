@@ -26,46 +26,46 @@
   text-align: left;
 }
 
-.faq__button_theme_white {
-  color: #1c1a1a;
-  background-color: #fff;
+.faq__button_theme_light {
+  color: var(--faq-btn-themeLight-text-color);
+  background-color: var(--faq-btn-themeLight-color);
 }
 
-.faq__button_theme_purple {
-  color: #fff;
-  background-color: #440f51;
+.faq__button_theme_dark {
+  color: var(--faq-btn-themeDark-text-color);
+  background-color: var(--faq-btn-themeDark-color);
 }
 
-.faq__button::after {
+.faq__button:after {
   content: "";
   flex: 0 0 46px;
   min-height: 46px;
   background-repeat: no-repeat;
-  transition: background-image 0.3s ease-in-out;
+  transition: background .2s ease-in-out;
 }
 
-.faq__button_theme_white::after {
+.faq__button_theme_light:after {
   background-image: url(../../img/faq/open-purple-transparent.svg);
 }
 
-.faq__button_theme_white:hover::after,
-.faq__button_theme_white:focus::after {
+.faq__button_theme_light:hover:after,
+.faq__button_theme_light:focus:after {
   background-image: url(../../img/faq/open-purple.svg);
 }
 
-.faq__button_theme_white:active::after {
+.faq__button_theme_light:active:after {
   background-image: url(../../img/faq/close-purple-transparent.svg);
 }
 
-.faq__button_theme_purple::after {
+.faq__button_theme_dark:after {
   background-image: url(../../img/faq/open-white-transparent.svg);
 }
 
-.faq__button_theme_purple:hover::after,
-.faq__button_theme_purple:focus::after {
+.faq__button_theme_dark:hover:after,
+.faq__button_theme_dark:focus:after {
   background-image: url(../../img/faq/open-white.svg);
 }
 
-.faq__button_theme_purple:active::after {
+.faq__button_theme_dark:active:after {
   background-image: url(../../img/faq/close-white-transparent.svg);
 }
